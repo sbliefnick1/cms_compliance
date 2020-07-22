@@ -38,7 +38,7 @@ for resource in resource_urls:
             df = pd.concat([df, temp], ignore_index=True, sort=False)
 
 # merge with npi id so we can join on it
-df['physician_profile_id'] = df['physician_profile_id'].apply(pd.to_numeric)
+# df['physician_profile_id'] = df['physician_profile_id'].apply(pd.to_numeric)
 df = pd.merge(df, crosswalk, how='left', on='physician_profile_id')
 
 # clean up data
