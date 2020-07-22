@@ -104,6 +104,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-
+scratch_files/
+.DS_Store
 phys_id_crosswalk.csv
 config.py
